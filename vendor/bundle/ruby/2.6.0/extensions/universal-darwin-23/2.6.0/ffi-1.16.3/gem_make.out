@@ -1,5 +1,5 @@
-current directory: /Users/amirmorcos/Documents/SocialApp/vendor/bundle/ruby/2.6.0/gems/ffi-1.16.3/ext/ffi_c
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20240404-30864-1wmdu4x.rb extconf.rb
+current directory: /Users/amirmorcos/Documents/App/vendor/bundle/ruby/2.6.0/gems/ffi-1.16.3/ext/ffi_c
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20240404-51539-1srcjy8.rb extconf.rb
 checking for ffi.h... no
 checking for ffi.h in /usr/local/include,/usr/include/ffi,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ffi,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/ffi... yes
 checking for ffi_prep_closure_loc() in -lffi... yes
@@ -11,10 +11,10 @@ checking for whether -pthread is accepted as LDFLAGS... yes
 creating extconf.h
 creating Makefile
 
-current directory: /Users/amirmorcos/Documents/SocialApp/vendor/bundle/ruby/2.6.0/gems/ffi-1.16.3/ext/ffi_c
+current directory: /Users/amirmorcos/Documents/App/vendor/bundle/ruby/2.6.0/gems/ffi-1.16.3/ext/ffi_c
 make "DESTDIR=" clean
 
-current directory: /Users/amirmorcos/Documents/SocialApp/vendor/bundle/ruby/2.6.0/gems/ffi-1.16.3/ext/ffi_c
+current directory: /Users/amirmorcos/Documents/App/vendor/bundle/ruby/2.6.0/gems/ffi-1.16.3/ext/ffi_c
 make "DESTDIR="
 compiling AbstractMemory.c
 AbstractMemory.c:1124:17: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
@@ -4072,6 +4072,6 @@ linking shared-object ffi_c.bundle
 ld: warning: -multiply_defined is obsolete
 ld: warning: search path '/AppleInternal/Library/BuildRoots/4e1473ee-9f66-11ee-8daf-cedaeb4cabe2/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.3.Internal.sdk/usr/local/lib' not found
 
-current directory: /Users/amirmorcos/Documents/SocialApp/vendor/bundle/ruby/2.6.0/gems/ffi-1.16.3/ext/ffi_c
+current directory: /Users/amirmorcos/Documents/App/vendor/bundle/ruby/2.6.0/gems/ffi-1.16.3/ext/ffi_c
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20240404-30864-gr5pkt
+/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20240404-51539-q72jni

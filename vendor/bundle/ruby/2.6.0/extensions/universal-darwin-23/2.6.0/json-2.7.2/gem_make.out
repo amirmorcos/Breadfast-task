@@ -1,13 +1,13 @@
-current directory: /Users/amirmorcos/Documents/SocialApp/vendor/bundle/ruby/2.6.0/gems/json-2.7.2/ext/json
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20240404-30864-p9ihpj.rb extconf.rb
+current directory: /Users/amirmorcos/Documents/App/vendor/bundle/ruby/2.6.0/gems/json-2.7.2/ext/json
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20240404-51539-g9gd3c.rb extconf.rb
 creating Makefile
 
-current directory: /Users/amirmorcos/Documents/SocialApp/vendor/bundle/ruby/2.6.0/gems/json-2.7.2/ext/json
+current directory: /Users/amirmorcos/Documents/App/vendor/bundle/ruby/2.6.0/gems/json-2.7.2/ext/json
 make "DESTDIR=" clean
 
-current directory: /Users/amirmorcos/Documents/SocialApp/vendor/bundle/ruby/2.6.0/gems/json-2.7.2/ext/json
+current directory: /Users/amirmorcos/Documents/App/vendor/bundle/ruby/2.6.0/gems/json-2.7.2/ext/json
 make "DESTDIR="
 make: Nothing to be done for `all'.
 
-current directory: /Users/amirmorcos/Documents/SocialApp/vendor/bundle/ruby/2.6.0/gems/json-2.7.2/ext/json
+current directory: /Users/amirmorcos/Documents/App/vendor/bundle/ruby/2.6.0/gems/json-2.7.2/ext/json
 make "DESTDIR=" install
