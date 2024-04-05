@@ -7,5 +7,7 @@ export default StyleSheet.create({
     height: scale(32),
     borderRadius: scale(16),
     backgroundColor: 'black',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

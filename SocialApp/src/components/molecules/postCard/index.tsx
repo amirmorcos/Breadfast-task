@@ -8,7 +8,7 @@ const PostCard = ({onPress, overrideContainerStyle}: PostCardProps) => {
   return (
     <TouchableOpacity onPress={onPress} style={overrideContainerStyle}>
       <View style={styles.avatarContainer}>
-        <Avatar />
+        <Avatar image="" name="Amir Morcos" />
         <View style={styles.nameContainer}>
           <Text>Melissa Berry</Text>
           <Text>10 mins</Text>
