@@ -7,12 +7,12 @@
 
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {Text} from 'react-native';
+import MainStack from 'navigation/mainStack';
 
 function App(): React.JSX.Element {
   return (
     <NavigationContainer>
-      <Text>Amir</Text>
+      <MainStack />
     </NavigationContainer>
   );
 }
