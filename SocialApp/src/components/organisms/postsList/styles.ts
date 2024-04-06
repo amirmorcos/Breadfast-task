@@ -6,6 +6,6 @@ export default StyleSheet.create({
     paddingBottom: vs(30),
   },
   separator: {
-    marginTop: vs(15),
+    marginVertical: vs(15),
   },
 });

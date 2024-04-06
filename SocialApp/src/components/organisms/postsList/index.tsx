@@ -1,15 +1,31 @@
+import Divider from 'atoms/divider';
 import {PostCard} from 'molecules/index';
-import React from 'react';
-import {FlatList, View} from 'react-native';
+import React, {useCallback} from 'react';
+import {FlatList} from 'react-native';
+import {useAppNavigation} from '../../../hooks/useAppNavigation';
 import styles from './styles';
+import {PostsListProps} from './types';
 
-const PostsList = () => {
+const PostsList = ({data}: PostsListProps) => {
+  const {navigate} = useAppNavigation();
+
+  const renderItemSeparatorComponent = useCallback(
+    () => <Divider overrideContainerStyle={styles.separator} />,
+    [],
+  );
+
   return (
     <FlatList
-      renderItem={() => <PostCard onPress={() => {}} />}
-      data={[1, 2, 3]}
+      renderItem={() => (
+        <PostCard
+          onPress={() => {
+            navigate('PostDetails');
+          }}
+        />
+      )}
+      data={data}
       showsVerticalScrollIndicator={false}
-      ItemSeparatorComponent={() => <View style={styles.separator} />}
+      ItemSeparatorComponent={renderItemSeparatorComponent}
       contentContainerStyle={styles.content}
     />
   );
