@@ -1,4 +1,4 @@
-import Divider from 'atoms/divider';
+import {Divider} from 'atoms/index';
 import {PostCard} from 'molecules/index';
 import React, {useCallback} from 'react';
 import {FlatList} from 'react-native';
