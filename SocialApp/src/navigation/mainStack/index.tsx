@@ -1,6 +1,6 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {HomeScreen} from 'screens/index';
+import {HomeScreen, PostDetails} from 'screens/index';
 import {MainStackParamsList} from './types';
 
 const Stack = createStackNavigator<MainStackParamsList>();
@@ -16,6 +16,7 @@ const MainStack = () => (
       }}
       component={HomeScreen}
     />
+    <Stack.Screen name="PostDetails" component={PostDetails} />
   </Stack.Navigator>
 );
 
