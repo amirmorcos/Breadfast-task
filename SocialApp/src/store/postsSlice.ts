@@ -1,7 +1,7 @@
 import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
-import {PostCard} from 'models/postCard';
 import PostsApi from 'api/posts';
 import UsersApi from 'api/users';
+import {PostCard} from 'models/postCard';
 
 interface PostsState {
   posts: PostCard[];
@@ -18,7 +18,6 @@ export const fetchPostsList = createAsyncThunk('posts/fetchList', async () => {
   const usersResponse = await UsersApi.getUsers();
   const postsData = response.map(post => {
     const userData = usersResponse.find(user => user.id === post.user_id);
-    console.log('user', post.user_id);
     return {
       ...post,
       name: userData?.name || '',
@@ -43,5 +42,4 @@ const PostsSlice = createSlice({
   },
 });
 
-export const {} = PostsSlice.actions;
 export default PostsSlice.reducer;

@@ -22,7 +22,7 @@ const PostsList = ({data}: PostsListProps) => {
           name={item.name}
           title={item.title}
           onPress={() => {
-            navigate('PostDetails');
+            navigate('PostDetails', {post: item});
           }}
         />
       )}

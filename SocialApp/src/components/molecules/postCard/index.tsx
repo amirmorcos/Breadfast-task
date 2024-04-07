@@ -1,5 +1,5 @@
-import React from 'react';
 import {Avatar} from 'atoms/index';
+import React from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
 import styles from './styles';
 import {PostCardProps} from './types';
@@ -10,11 +10,14 @@ const PostCard = ({
   name,
   title,
   overrideContainerStyle,
+  showFullBody = false,
 }: PostCardProps) => {
+  const Container = onPress ? TouchableOpacity : View;
+
   return (
-    <TouchableOpacity onPress={onPress} style={overrideContainerStyle}>
+    <Container onPress={onPress} style={overrideContainerStyle}>
       <View style={styles.avatarContainer}>
-        <Avatar image="" name={name || ''} />
+        <Avatar name={name || ''} />
         <View style={styles.nameContainer}>
           <Text>{name}</Text>
         </View>
@@ -22,10 +25,13 @@ const PostCard = ({
       <Text numberOfLines={1} ellipsizeMode="tail" style={styles.title}>
         {title}
       </Text>
-      <Text style={styles.body} numberOfLines={3} ellipsizeMode="tail">
+      <Text
+        style={styles.body}
+        numberOfLines={!showFullBody ? 3 : undefined}
+        ellipsizeMode="tail">
         {body}
       </Text>
-    </TouchableOpacity>
+    </Container>
   );
 };
 
