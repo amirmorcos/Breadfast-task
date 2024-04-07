@@ -10,6 +10,7 @@ import React, {forwardRef, useCallback, useMemo} from 'react';
 import {Text} from 'react-native';
 import styles from './styles';
 import {CommentsModalProps} from './types';
+import Divider from 'atoms/divider';
 
 export const CommentsModal = forwardRef<BottomSheetModal, CommentsModalProps>(
   ({comments}, ref) => {
@@ -28,6 +29,10 @@ export const CommentsModal = forwardRef<BottomSheetModal, CommentsModalProps>(
       [],
     );
 
+    const renderItemSeparatorComponent = () => (
+      <Divider overrideContainerStyle={styles.separator} />
+    );
+
     return (
       <BottomSheetModalProvider>
         <BottomSheetModal
@@ -37,6 +42,7 @@ export const CommentsModal = forwardRef<BottomSheetModal, CommentsModalProps>(
           snapPoints={snapPoints}>
           <Text style={styles.allComments}>All Comments</Text>
           <BottomSheetFlatList
+            ItemSeparatorComponent={renderItemSeparatorComponent}
             contentContainerStyle={styles.listContentContainer}
             data={comments}
             renderItem={({item}) => (

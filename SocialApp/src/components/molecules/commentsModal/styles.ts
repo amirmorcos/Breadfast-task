@@ -10,4 +10,7 @@ export default StyleSheet.create({
     marginTop: vs(12),
     fontWeight: 'bold',
   },
+  separator: {
+    marginTop: vs(15),
+  },
 });
