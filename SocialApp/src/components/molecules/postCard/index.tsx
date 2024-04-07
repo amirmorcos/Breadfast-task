@@ -14,8 +14,10 @@ const PostCard = ({onPress, overrideContainerStyle}: PostCardProps) => {
           <Text>10 mins</Text>
         </View>
       </View>
-      <View style={styles.card} />
-      <Text style={styles.body} numberOfLines={2} ellipsizeMode="tail">
+      <Text numberOfLines={1} ellipsizeMode="tail" style={styles.title}>
+        TITLE
+      </Text>
+      <Text style={styles.body} numberOfLines={3} ellipsizeMode="tail">
         Body of the post{' '}
       </Text>
     </TouchableOpacity>
