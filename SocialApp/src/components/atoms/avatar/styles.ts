@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import {scale} from 'react-native-size-matters';
+import Colors from 'themes/colors';
 
 export default StyleSheet.create({
   container: {
@@ -8,7 +9,7 @@ export default StyleSheet.create({
     borderRadius: scale(16),
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: 'black',
+    borderColor: Colors.BLACK,
     borderWidth: 1,
   },
 });

@@ -1,14 +1,13 @@
 import {StyleSheet} from 'react-native';
+import {s, vs} from 'react-native-size-matters';
 
 export default StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 24,
-    justifyContent: 'center',
-    backgroundColor: 'grey',
+  listContentContainer: {
+    padding: s(10),
   },
-  contentContainer: {
-    flex: 1,
-    alignItems: 'center',
+  allComments: {
+    textAlign: 'center',
+    marginTop: vs(12),
+    fontWeight: 'bold',
   },
 });

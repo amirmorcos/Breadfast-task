@@ -11,7 +11,8 @@
       "utlis/*": ["src/utils/*"],
       "models/*": ["src/models/*"],
       "store/*": ["./src/store/*"],
-      "api/*": ["./src/api/*"]
+      "api/*": ["./src/api/*"],
+      "themes/*": ["./src/themes/*"]
     }
   }
 }

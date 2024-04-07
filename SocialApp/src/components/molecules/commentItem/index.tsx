@@ -2,15 +2,18 @@ import Avatar from 'atoms/avatar';
 import React from 'react';
 import {Text, View} from 'react-native';
 import styles from './styles';
+import {CommentItemProps} from './types';
 
-const CommentItem = () => {
+const CommentItem = ({name, body}: CommentItemProps) => {
   return (
     <View style={styles.container}>
       <View style={styles.avatarContainer}>
-        <Avatar name="Amir Morcos" />
-        <Text style={styles.name}>Amir</Text>
+        <Avatar name={name} />
+        <Text style={styles.name}>{name}</Text>
       </View>
-      <View style={styles.body} />
+      <View style={styles.body}>
+        <Text>{body}</Text>
+      </View>
     </View>
   );
 };
