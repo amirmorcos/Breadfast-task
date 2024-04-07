@@ -19,4 +19,7 @@ export default StyleSheet.create({
   body: {
     marginTop: vs(5),
   },
+  title: {
+    marginVertical: vs(10),
+  },
 });
