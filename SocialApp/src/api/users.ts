@@ -1,8 +1,9 @@
 import {User} from 'models/user';
+import Urls from './constants';
 import api from './index';
 class UsersApi {
   getUsers = async () => {
-    const response = await api.get('users', {
+    const response = await api.get(Urls.USERS, {
       params: {
         page: 1,
         ['per_page']: 20,

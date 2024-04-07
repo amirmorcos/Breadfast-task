@@ -1,19 +1,17 @@
 import {StyleSheet} from 'react-native';
 import {vs} from 'react-native-size-matters';
+import Colors from 'themes/colors';
 
 export default StyleSheet.create({
-  content: {
-    paddingBottom: vs(30),
-  },
-  separator: {
-    marginVertical: vs(15),
-  },
-  emptyContainer: {
-    flex: 1,
+  container: {
+    width: '100%',
+    backgroundColor: Colors.RED,
+    height: vs(48),
+    borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  button: {
-    marginTop: vs(10),
+  text: {
+    color: Colors.WHITE,
   },
 });

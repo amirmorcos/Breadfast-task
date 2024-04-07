@@ -1,7 +1,8 @@
 import axios from 'axios';
+import Urls from './constants';
 
 const instance = axios.create({
-  baseURL: 'https://gorest.co.in/public/v2/',
+  baseURL: Urls.BASE_URLS,
   timeout: 1000,
 });
 

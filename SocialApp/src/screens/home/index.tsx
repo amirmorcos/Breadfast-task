@@ -21,7 +21,7 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <PostsList data={posts} />
+      <PostsList data={posts} onRetry={() => dispatch(fetchPostsList())} />
     </View>
   );
 };

@@ -1,12 +1,13 @@
 import {Divider} from 'atoms/index';
 import {PostCard} from 'molecules/index';
 import React, {useCallback} from 'react';
-import {FlatList} from 'react-native';
+import {FlatList, Text, View} from 'react-native';
 import {useAppNavigation} from '../../../hooks/useAppNavigation';
 import styles from './styles';
 import {PostsListProps} from './types';
+import Button from 'atoms/button';
 
-const PostsList = ({data}: PostsListProps) => {
+const PostsList = ({data, onRetry}: PostsListProps) => {
   const {navigate} = useAppNavigation();
 
   const renderItemSeparatorComponent = useCallback(
@@ -14,8 +15,22 @@ const PostsList = ({data}: PostsListProps) => {
     [],
   );
 
+  const renderEmptyComponent = useCallback(() => {
+    return (
+      <View style={styles.emptyContainer}>
+        <Text>No Posts yet</Text>
+        <Button
+          overrideContainerStyle={styles.button}
+          title="Try again"
+          onPress={onRetry}
+        />
+      </View>
+    );
+  }, [onRetry]);
+
   return (
     <FlatList
+      ListEmptyComponent={renderEmptyComponent}
       renderItem={({item}) => (
         <PostCard
           body={item.body}
