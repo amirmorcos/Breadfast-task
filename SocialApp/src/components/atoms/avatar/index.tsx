@@ -6,8 +6,8 @@ import {AvatarProps} from './types';
 const Avatar = ({image, name}: AvatarProps) => {
   const nameSeparated = name.split(' ');
   const initials = `${nameSeparated[0]
-    .substring(0, 1)
-    .toUpperCase()} ${nameSeparated[1].substring(0, 1).toUpperCase()}`;
+    ?.substring(0, 1)
+    ?.toUpperCase()} ${nameSeparated[1]?.substring(0, 1).toUpperCase()}`;
 
   if (!image) {
     return (

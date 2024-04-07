@@ -1,3 +1,5 @@
+import {PostCard} from 'models/postCard';
+
 export type PostsListProps = {
-  data: Array<number>;
+  data: PostCard[];
 };

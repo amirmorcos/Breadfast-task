@@ -16,8 +16,11 @@ const PostsList = ({data}: PostsListProps) => {
 
   return (
     <FlatList
-      renderItem={() => (
+      renderItem={({item}) => (
         <PostCard
+          body={item.body}
+          name={item.name}
+          title={item.title}
           onPress={() => {
             navigate('PostDetails');
           }}
