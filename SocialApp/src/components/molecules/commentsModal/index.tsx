@@ -5,12 +5,12 @@ import {
   BottomSheetModal,
   BottomSheetModalProvider,
 } from '@gorhom/bottom-sheet';
+import Divider from 'atoms/divider';
 import {CommentItem} from 'molecules/index';
 import React, {forwardRef, useCallback, useMemo} from 'react';
 import {Text} from 'react-native';
 import styles from './styles';
 import {CommentsModalProps} from './types';
-import Divider from 'atoms/divider';
 
 export const CommentsModal = forwardRef<BottomSheetModal, CommentsModalProps>(
   ({comments}, ref) => {
