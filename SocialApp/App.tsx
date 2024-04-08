@@ -10,8 +10,9 @@ import {NavigationContainer} from '@react-navigation/native';
 import MainStack from 'navigation/mainStack';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {Provider} from 'react-redux';
-import {store} from 'store/index';
+import {store, persistor} from 'store/index';
 import SplashScreen from 'react-native-splash-screen';
+import {PersistGate} from 'redux-persist/integration/react';
 
 function App(): React.JSX.Element {
   useEffect(() => {
@@ -20,9 +21,11 @@ function App(): React.JSX.Element {
   return (
     <GestureHandlerRootView style={{flex: 1}}>
       <Provider store={store}>
-        <NavigationContainer>
-          <MainStack />
-        </NavigationContainer>
+        <PersistGate loading={null} persistor={persistor}>
+          <NavigationContainer>
+            <MainStack />
+          </NavigationContainer>
+        </PersistGate>
       </Provider>
     </GestureHandlerRootView>
   );
