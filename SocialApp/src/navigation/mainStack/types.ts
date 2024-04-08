@@ -1,4 +1,6 @@
+import {PostCard} from 'models/postCard';
+
 export type MainStackParamsList = {
   Home: undefined;
-  PostDetails: undefined;
+  PostDetails: {post: PostCard};
 };

@@ -1,10 +1,7 @@
 import {StyleProp, ViewStyle} from 'react-native';
 
-export type PostCardProps = {
-  onPress?: () => void;
-  name: string;
+export type ButtonProps = {
+  onPress: () => void;
   title: string;
-  body: string;
   overrideContainerStyle?: StyleProp<ViewStyle>;
-  showFullBody?: boolean;
 };

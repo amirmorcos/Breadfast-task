@@ -1,13 +1,20 @@
-import React, {useCallback} from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {HomeScreen, PostDetails} from 'screens/index';
-import {MainStackParamsList} from './types';
 import {BackIcon} from 'atoms/index';
+import React, {useCallback} from 'react';
+import {Image} from 'react-native';
+import {HomeScreen, PostDetails} from 'screens/index';
+import Images from 'themes/images';
+import styles from './styles';
+import {MainStackParamsList} from './types';
 
 const Stack = createStackNavigator<MainStackParamsList>();
 const MainStack = () => {
   const renderBackImage = useCallback(() => {
     return <BackIcon />;
+  }, []);
+
+  const renderHomeTitle = useCallback(() => {
+    return <Image source={Images.logo} style={styles.logoImg} />;
   }, []);
 
   return (
@@ -20,11 +27,15 @@ const MainStack = () => {
       <Stack.Screen
         name="Home"
         options={{
-          headerTitle: 'My Feed',
+          headerTitle: renderHomeTitle,
         }}
         component={HomeScreen}
       />
-      <Stack.Screen name="PostDetails" component={PostDetails} />
+      <Stack.Screen
+        name="PostDetails"
+        options={({route}) => ({title: route.params.post.name})}
+        component={PostDetails}
+      />
     </Stack.Navigator>
   );
 };

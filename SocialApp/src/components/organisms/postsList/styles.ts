@@ -8,4 +8,12 @@ export default StyleSheet.create({
   separator: {
     marginVertical: vs(15),
   },
+  emptyContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  button: {
+    marginTop: vs(10),
+  },
 });

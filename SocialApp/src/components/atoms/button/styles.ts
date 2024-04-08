@@ -1,15 +1,17 @@
 import {StyleSheet} from 'react-native';
-import {scale} from 'react-native-size-matters';
+import {vs} from 'react-native-size-matters';
 import Colors from 'themes/colors';
 
 export default StyleSheet.create({
   container: {
-    width: scale(32),
-    height: scale(32),
-    borderRadius: scale(16),
+    width: '100%',
+    backgroundColor: Colors.RED,
+    height: vs(48),
+    borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
-    borderColor: Colors.BLACK,
-    borderWidth: 1,
+  },
+  text: {
+    color: Colors.WHITE,
   },
 });

@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import {s, vs} from 'react-native-size-matters';
+import Colors from 'themes/colors';
 
 export default StyleSheet.create({
   avatarContainer: {
@@ -12,7 +13,7 @@ export default StyleSheet.create({
   card: {
     width: '100%',
     height: vs(160),
-    backgroundColor: 'black',
+    backgroundColor: Colors.BLACK,
     marginTop: vs(10),
     borderRadius: s(6),
   },

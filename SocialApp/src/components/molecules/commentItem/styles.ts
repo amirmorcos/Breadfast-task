@@ -13,8 +13,6 @@ export default StyleSheet.create({
     marginStart: s(10),
   },
   body: {
-    height: 32,
-    backgroundColor: 'blue',
     marginTop: vs(10),
   },
 });
