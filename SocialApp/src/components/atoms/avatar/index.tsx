@@ -9,6 +9,10 @@ const Avatar = ({name}: AvatarProps) => {
     ?.substring(0, 1)
     ?.toUpperCase()} ${nameSeparated[1]?.substring(0, 1).toUpperCase()}`;
 
+  if (!name) {
+    return <Text>No name found</Text>;
+  }
+
   return (
     <View style={styles.container}>
       <Text>{initials}</Text>

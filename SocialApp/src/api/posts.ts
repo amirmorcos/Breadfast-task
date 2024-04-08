@@ -4,7 +4,12 @@ import Urls from './constants';
 
 class PostsApi {
   getPostsList = async () => {
-    const response = await api.get(Urls.POSTS);
+    const response = await api.get(Urls.POSTS, {
+      params: {
+        page: 1,
+        ['per_page']: 10,
+      },
+    });
     return response.data as Post[];
   };
   getComments = async (postId: number) => {
