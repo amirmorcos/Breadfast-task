@@ -64,7 +64,7 @@ Now that you have successfully run the app, let's check the structure. It's made
 
 ## Step 4: Tools/Packages
 
-1. React Navigation: handles bottom tab bar navigation
+1. React Navigation: handles the navigation of the app
 2. Redux: A global state management
 3. Async Storage: persists data in case of offline connection
 4. React Native size matters: A lightweight, React-Native utility belt for scaling the size of the app UI across different dimensions
@@ -72,10 +72,10 @@ Now that you have successfully run the app, let's check the structure. It's made
 
 ## Screenshots
 
-![Alt text](/screenshots/splash_screen.png?raw=true 'Splash Screen')
-![Alt text](/screenshots/home_screen.png?raw=true 'Home Screen')
-![Alt text](/screenshots/post_details.png?raw=true 'Post details Screen')
-![Alt text](/screenshots/post_details_modal.png?raw=true 'Post details modal')
+![Alt text](/screenshots/splash_screen.png?raw=true "Splash Screen")
+![Alt text](/screenshots/home_screen.png?raw=true "Home Screen")
+![Alt text](/screenshots/post_details.png?raw=true "Post details Screen")
+![Alt text](/screenshots/post_details_modal.png?raw=true "Post details modal")
 
 # Troubleshooting
 
